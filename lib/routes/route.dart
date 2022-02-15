@@ -1,5 +1,6 @@
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
+import 'package:flutter_application_1/pages/resep_pass_page.dart';
 import 'package:flutter_application_1/pages/signup.dart';
 import 'package:flutter_application_1/routes/binding.dart';
 import 'package:get/get.dart';
@@ -18,6 +19,11 @@ class AppPages {
       name: RouteNamed.signup,
       page: () => SignupPage(),
       binding: SignUpBinding(),
+    ),
+    GetPage(
+      name: RouteNamed.reset,
+      page: () => ResetPage(),
+      binding: ResetPassBinding(),
     ),
   ];
 }
